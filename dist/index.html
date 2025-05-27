@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/src/input.css">
+</head>
+<body>
+      
+  <!-- NavBar -->
+ <nav class="h-[5rem] fixed top-0 w-full bg-white z-50 md:px-10 lg:px-0 flex items-center justify-between lg:justify-around">
+  <a href="#">
+    <div class="img flex items-center p-4 md:p-0">
+      <img class="h-16" src="/Images/logo.jpeg" alt="Logo">
+      <span class="text-gray-500 font-poppins">Woit Solutions</span>
+    </div>
+  </a>
+  <div class="links hidden md:flex items-center md:gap-[1rem] lg:gap-[2rem] font-poppins md:text-[0.8rem] lg:text-[0.9rem] text-gray-500">
+    <a href="#" class="text-[#53C7D8]">Home</a>
+    <a href="#" class="hover:text-[#53C7D8] duration-300">Company</a>
+    <div class="relative group">
+      <a href="#" class="group relative flex items-center text-gray-500 hover:text-[#53C7D8] transition-colors duration-200 ">
+        Services
+        <i class="fa-solid fa-caret-down ml-2 text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+      </a>
+      <ul class="absolute left-0 mt-2 py-5 w-72 bg-white shadow-xl rounded-sm opacity-0 invisible translate-y-1 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100 divide-y divide-gray-100">
+        <!-- Web Apps -->
+        <li>
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#53C7D8] transition-colors duration-150">
+            <i class="fas fa-globe mr-3  w-5 text-center text-green-500"></i>
+            Web Applications Development
+          </a>
+        </li>
+        <!-- Custom Software -->
+        <li>
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#53C7D8] transition-colors duration-150">
+            <i class="fas fa-code mr-3 text-yellow-500 w-5 text-center"></i>
+            Custom Software Development
+          </a>
+        </li>
+        <!-- RPA -->
+        <li>
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#53C7D8] transition-colors duration-150">
+            <i class="fas fa-robot mr-3 text-red-500 w-5 text-center"></i>
+            RPA Development
+          </a>
+        </li>
+        <!-- Mobile Apps -->
+        <li>
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#53C7D8] transition-colors duration-150">
+            <i class="fas fa-mobile-alt mr-3 text-blue-500 w-5 text-center"></i>
+            Mobile Application Development
+          </a>
+        </li>
+        <!-- Staff Augmentation -->
+        <li>
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#53C7D8] transition-colors duration-150">
+            <i class="fas fa-users mr-3 text-brown-400 w-5 text-center"></i>
+            Staff Augmentation
+          </a>
+        </li>
+        <!-- E-commerce -->
+        <li>
+          <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-[#53C7D8] transition-colors duration-150">
+            <i class="fas fa-shopping-cart mr-3 text-pink-400 w-5 text-center"></i>
+            E-commerce Development
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="hover:text-[#53C7D8] duration-300">Career <span class="bg-gray-100 mb-2 text-[#53C7D8] rounded-md pt-1"><sup>We're Hiring</sup></span></a>
+    <a href="#" class="hover:text-[#53C7D8] duration-300">Blog</a>
+    <div class="btn">
+      <a href="#" class="bg-[#53C7D8] text-white py-3 px-4 rounded-md hover:bg-[#3f96a3] duration-300 hover:duration-300">Contact Us</a>
+    </div>
+  </div>
+  <div id="hamburger" class="hamberg block md:hidden p-8 text-[1.3rem] text-gray-400 cursor-pointer">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+<!-- Mobile Sidebar with Services Dropdown -->
+<div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 p-6 md:hidden overflow-y-auto">
+  <div class="flex justify-end mb-4">
+    <button id="closeSidebar" class="text-gray-500 text-xl">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="flex flex-col space-y-6 text-gray-600 font-poppins">
+    <a href="#" class="text-[#53C7D8]">Home</a>
+    <a href="#" class="hover:text-[#53C7D8] duration-300">Company</a>
+    
+    <!-- Services Dropdown in Sidebar -->
+    <div class="relative">
+      <button id="servicesDropdownBtn" class="flex items-center justify-between w-full hover:text-[#53C7D8] duration-300">
+        Services
+        <i class="fas fa-chevron-down text-xs  transition-transform duration-200"></i>
+      </button>
+      <ul id="servicesDropdown" class="mt-2 pl-4 space-y-3 hidden">
+        <li>
+          <a href="#" class="flex items-center hover:text-[#53C7D8] duration-150">
+            <i class="fas fa-globe mr-3 text-green-500 w-5 text-center"></i>
+            Web Applications
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center hover:text-[#53C7D8] duration-150">
+            <i class="fas fa-code mr-3 text-yellow-500 w-5 text-center"></i>
+            Custom Software
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center hover:text-[#53C7D8] duration-150">
+            <i class="fas fa-robot mr-3 text-red-500 w-5 text-center"></i>
+            RPA Development
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center hover:text-[#53C7D8] duration-150">
+            <i class="fas fa-mobile-alt mr-3 text-blue-500 w-5 text-center"></i>
+            Mobile Apps
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center hover:text-[#53C7D8] duration-150">
+            <i class="fas fa-users mr-3 text-black-500 w-5 text-center"></i>
+            Staff Augmentation
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center hover:text-[#53C7D8] duration-150">
+            <i class="fas fa-shopping-cart mr-3 text-pink-500 w-5 text-center"></i>
+            E-commerce
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <a href="#" class="hover:text-[#53C7D8] duration-300">Career <span class="bg-gray-100 text-[#53C7D8] text-[0.9rem] ml-4 rounded-md py-1 px-2">We're Hiring</span></a>
+    <a href="#" class="hover:text-[#53C7D8] duration-300">Blog</a>
+    <a href="#" class="bg-[#53C7D8] text-white py-2 px-4 rounded-md text-center hover:bg-[#3f96a3] duration-300">Contact Us</a>
+  </div>
+</div>
+
+
+  <!-- Hero Section -->
+
+  <div class="hero_section mt-[5rem]  lg:h-[55rem] lg:w-[100%] lg:mt-[2rem] bg-cover bg-[url('/Images/woit%20solut.png')]">
+    <div class="text h-[30rem] p-6 md:h-[45rem] md:text-center lg:text-left lg:h-[40rem] lg:w-[45rem] lg:p-8 lg:ml-[17rem] lg:pt-[10rem]">
+        <h2 class="font-semibold font-poppins pt-[3rem] md:mt-[5rem] md:text-[3rem] text-[1.5rem] lg:text-[2.5rem] lg:leading-[3.5rem]">Empowering Your Business <br>  with Customized Technology Solutions</h2>
+        <p class="lg:pt-4 lg:text-[1.1rem] md:text-[1.5rem] md:font-normal  pt-3 text-[0.8rem]  text-gray-500">Transforming Business Through Cutting - Edge Web and Software Development. RPA Solutions, and Staff Augmentation</p>
+        <div class="btn mt-[2rem] lg:mt-[3rem] md:mt-[4rem] ">
+            <a href="#" class="text-white bg-[#91CE85] py-2 px-3 md:py-4 md:px-8   rounded-lg duration-300 hover:shadow-[0_5px_15px_rgba(0,128,0,0.35)] hover:duration-300">Let's Talk</a>
+        </div>
+    </div>
+  </div>
+
+
+
+<!-- Stat Section -->
+
+
+    <div class="stat h-[30rem] w-[100%]  font-poppins  flex justify-center flex-col gap-12 items-center">
+      <div class="upper flex justify-center flex-col items-center gap-3">
+          <h4 class="text-[#53C7D8] p-1 px-3 mt-[40rem] md:mt-[10rem] lg:mt-0 bg-gray-100 font-bold rounded-md">stats</h4>
+          <h2 class=" font-semibold text-[2rem] font-poppins" >Woit In Numbers</h2>
+      </div>
+      <div class="statis grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="boxes flex justify-center items-center flex-col p-12 md:p-16 border-b-2 border-gray-200 md:border-b-0 md:border-r-2 md:border-gray-200 ">
+            <h4 class="text-[2.3rem] ">7+</h4>
+            <h2 class="text-[1.1rem] text-gray-400">Years of Experience</h2>
+          </div>
+         <div class="boxes flex justify-center items-center flex-col p-12 md:p-16  border-b-2 border-gray-200 md:border-b-0 lg:border-r-2 md:border-gray-200">
+            <h4 class="text-[2.3rem] ">350</h4>
+            <h2 class="text-[1.1rem] text-gray-400">Projects Worked On</h2>
+          </div>
+         <div class="boxes flex justify-center items-center flex-col p-12 md:p-16  border-b-2 border-gray-200 md:border-b-0 md:border-r-2 md:border-gray-200">
+            <h4 class="text-[2.3rem] ">100+</h4>
+            <h2 class="text-[1.1rem] text-gray-400">Satisficated Clients Globally</h2>
+          </div>
+          <div class="boxes flex justify-center items-center flex-col p-12 md:p-16 ">
+            <h4 class="text-[2.3rem] ">30+</h4>
+            <h2 class="text-[1.1rem] text-gray-400">Expert Onboard</h2>
+          </div>
+      </div>
+
+    </div>
+
+
+      <!-- Services Section -->
+
+        <div class="services_section h-[80rem] md:h-[100rem] lg:h-[60rem] w-[100%]  mt-[35rem] md:mt-[10rem] lg:mt-0 ">
+          <h2 class="text-[#91CE85] pl-[2rem] md:pl-[20rem] pt-[5rem] font-poppins text-[1.3rem] font-semibold">OUR SERVICES</h2>
+         <div class="boxes flex flex-col lg:flex-row md:justify-center md:gap-0 lg:gap-20 items-center mt-[6rem]">
+             <div class="box1 h-[20rem] w-[20rem] md:h-[30rem] md:w-[35rem]">
+              <img class="object-cover object-center" src="/Images/web.jpg" alt="">
+
+          </div>
+          <div class="box2 md:h-[40rem] md:w-[31rem] p-[2rem]">
+            <div class="one flex gap-5 border-b border-gray-200">
+              <img class="h-10" src="/Images/webapp.png" alt="">
+              <span class="pb-[2rem]">
+                <h2 class="font-semibold mt-4 text-[1.3rem]">Web Application Development</h2>
+                <p class="text-gray-400 mt-2 mb-[2rem]">We provide dynamic and interactive web application development services that elevate your online presence and engage your target audience.</p>
+                <a href="#" class="text-[#53C7D8] font-semibold">View More <i class="fa-solid fa-arrow-right ml-5"></i></a>
+              </span>
+            </div>
+
+            <div class="two flex items-center gap-5 border-b border-gray-200 pt-10 pb-10">
+              <span >
+              <img class="h-10" src="/Images/rpa.png" alt="">
+              </span>
+              <span ><h2 class="text-[1.2rem] font-semibold"> 
+                         RPA Development</h2></span>
+            </div>
+            
+
+           <div class="two flex items-center gap-5 border-b border-gray-200 pt-10 pb-10">
+              <span >
+              <img class="h-10" src="/Images/custom.png" alt="">
+              </span>
+              <span ><h2 class="text-[1.2rem] font-semibold"> 
+                         Custom Software Development</h2></span>
+            </div>
+            
+
+             <div class="two flex items-center gap-5 pt-10">
+              <span>
+              <img class="h-10" src="/Images/staff.png" alt="">
+              </span>
+              <span><h2 class="text-[1.2rem] font-semibold"> 
+                        Staff Augmentation</h2></span>
+            </div>
+            
+          </div>
+         </div> 
+        </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="soft.js"></script>
+</body>
+</html>
