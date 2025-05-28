@@ -1038,6 +1038,10 @@ video {
           user-select: none;
 }
 
+.resize {
+  resize: both;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -2250,6 +2254,18 @@ video {
 
   .lg\:h-\[70rem\] {
     height: 70rem;
+  }
+
+  .lg\:h-\[\] {
+    height: ;
+  }
+
+  .lg\:h-\[60rem\] {
+    height: 60rem;
+  }
+
+  .lg\:h-\[50rem\] {
+    height: 50rem;
   }
 
   .lg\:w-\[100\%\] {

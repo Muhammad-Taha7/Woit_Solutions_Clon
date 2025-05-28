@@ -22,67 +22,46 @@
     icon.classList.toggle('fa-chevron-up');
   });
 
-  
-
-
-    const cardsContainer = document.querySelector('.cards');
+ document.addEventListener('DOMContentLoaded', function() {
+  const cardsContainer = document.querySelector('.cards');
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
   const cards = document.querySelectorAll('.card1');
-
-  function getStep() {
-    const style = getComputedStyle(cards[0]);
-    const cardWidth = parseFloat(style.width);
-    const containerStyle = getComputedStyle(cardsContainer);
-    const gap = parseFloat(containerStyle.gap);
-    return cardWidth + gap;
+  
+  let currentIndex = 0;
+  const cardCount = cards.length;
+  const cardWidth = cards[0].offsetWidth + 24; // width + gap
+  
+  // Clone first and last cards for seamless looping
+  const firstCard = cards[0].cloneNode(true);
+  const lastCard = cards[cardCount - 1].cloneNode(true);
+  cardsContainer.appendChild(firstCard);
+  cardsContainer.insertBefore(lastCard, cards[0]);
+  
+  // Update container width and position
+  function updateSlider() {
+    cardsContainer.style.width = `${(cardCount + 2) * cardWidth}px`;
+    cardsContainer.style.transform = `translateX(${-cardWidth * (currentIndex + 1)}px)`;
   }
-
-  const step = getStep();
-  const visibleCards = 2;
-
-  // Start index at 1 because 0 is duplicate last card
-  let currentIndex = 1;
-
-  function updateSlider(withTransition = true) {
-    if (withTransition) {
-      cardsContainer.style.transition = 'transform 0.5s ease';
-    } else {
-      cardsContainer.style.transition = 'none';
-    }
-    const translateX = -currentIndex * step;
-    cardsContainer.style.transform = `translateX(${translateX}px)`;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    if (currentIndex >= cards.length - visibleCards) return; // prevent extra clicks
-
-    currentIndex++;
+  
+  // Move to previous card
+  prevBtn.addEventListener('click', function() {
+    currentIndex = (currentIndex - 1 + cardCount) % cardCount;
     updateSlider();
-
-    // If we moved to duplicate first card (last element), reset to original first card (index=1) instantly
-    if (currentIndex === cards.length - visibleCards) {
-      setTimeout(() => {
-        currentIndex = 1;
-        updateSlider(false);
-      }, 500); // after transition ends
-    }
   });
-
-  prevBtn.addEventListener('click', () => {
-    if (currentIndex <= 0) return;
-
-    currentIndex--;
+  
+  // Move to next card
+  nextBtn.addEventListener('click', function() {
+    currentIndex = (currentIndex + 1) % cardCount;
     updateSlider();
-
-    // If we moved to duplicate last card (first element), reset to original last card (index=cards.length - visibleCards -1)
-    if (currentIndex === 0) {
-      setTimeout(() => {
-        currentIndex = cards.length - visibleCards - 1;
-        updateSlider(false);
-      }, 500);
-    }
   });
-
-  // Initialize slider position to 1 (original first card)
-  updateSlider(false);
+  
+  // Initialize slider
+  updateSlider();
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    const newCardWidth = cards[0].offsetWidth + 24;
+    cardsContainer.style.transform = `translateX(${-newCardWidth * (currentIndex + 1)}px)`;
+  });
+});
