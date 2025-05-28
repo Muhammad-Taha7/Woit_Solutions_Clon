@@ -403,89 +403,128 @@
     </div>
   </div>
 
-  
- <!-- Why Choose -->
-<div class="Choose h-auto lg:h-[40rem] mt-60 md:mt-0 flex flex-col gap-20 justify-center items-center py-20">
-  <div class="choose_text text-center px-4">
-    <h2 class="text-4xl font-medium font-poppins">WHY CHOOSE WOIT SOLUTIONS</h2>
-    <p class="text-center text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
-      Using deep domain expertise of our software developers, we create impactful digital solutions that drive meaningful change with a strategic vision.
-    </p>
+
+
+
+ <!-- Card slider -->
+<div class="Card_slider w-full max-w-[72rem] mt-[30rem] md:mt-0 mx-auto overflow-hidden relative rounded-lg px-4 sm:px-6 lg:px-0">
+  <div class="text flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 sm:p-6 gap-4">
+    <div>
+      <h2 class="text-[#91CE85] text-lg sm:text-xl font-poppins font-semibold">TESTIMONIALS</h2>
+      <h1 class="text-2xl sm:text-3xl font-poppins font-semibold md:mt-6">What People say</h1>
+    </div>
+    <div class="arrows flex gap-4 sm:gap-6 text-[#91CE85] text-2xl sm:text-3xl cursor-pointer select-none">
+      <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+      <button id="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
   </div>
-  
-  <div class="statis grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 px-4 w-full max-w-7xl mx-auto">
-    <!-- Card 1 -->
-    <div class="group h-full min-h-[15rem] [perspective:1000px]">
-      <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        <div class="absolute inset-0 bg-gray-200 rounded-lg [backface-visibility:hidden] p-6 flex flex-col justify-center items-center">
-          <img class="w-16" src="/Images/asset 12.svg" alt="">
-          <h2 class="font-poppins mt-4 font-medium text-center">360 <sup>o</sup> Approach</h2>
+
+  <div class="cards flex gap-4 sm:gap-6 transition-transform duration-500 w-max">
+    
+    <!-- CARD TEMPLATE -->
+    <div class="card1 h-auto w-[90vw] sm:w-[35rem] flex-shrink-0 rounded-lg border border-gray-500">
+      <div class="img">
+        <img class="w-full h-48 sm:h-64 object-cover rounded-t-lg" src="/Images/asset 74.png" alt="">
+      </div>
+      <div class="text flex items-center p-4">
+        <img class="h-12 sm:h-16 rounded-full mr-4" src="/Images/asset 21.jpeg" alt="">
+        <div>
+          <h2 class="text-base sm:text-lg font-semibold">Brian</h2>
+          <p class="text-gray-400 text-sm sm:text-base">Chief Technology Officer</p>
         </div>
-        <div class="absolute inset-0 bg-gray-300 rounded-lg [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 flex flex-col justify-center items-center">
-          <p class="font-poppins text-center text-[0.9rem] text-gray-600">From ideation to delivery, and ongoing support, we cover the full lifecycle of enterprise application design, integration, and management through our IS360 framework.</p>
-        </div>
+      </div>
+      <div class="para px-6 sm:px-10 pb-6 text-sm sm:text-base">
+        Woit Solutions went above and beyond expectations by successfully developing and deploying a cutting-edge Automated Loan Application System for Transact.
       </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="group h-full min-h-[15rem] [perspective:1000px]">
-      <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        <div class="absolute inset-0 bg-gray-200 rounded-lg [backface-visibility:hidden] p-6 flex flex-col justify-center items-center">
-          <img class="w-16" src="/Images/asset 13.svg" alt="">
-          <h2 class="font-poppins mt-4 font-medium text-center">Client-Centricity</h2>
+    <div class="card1 h-auto w-[90vw] sm:w-[35rem] flex-shrink-0 rounded-lg border border-gray-500">
+      <div class="img">
+        <img class="w-full h-48 sm:h-64 object-cover rounded-t-lg" src="/Images/asset 77.png" alt="">
+      </div>
+      <div class="text flex items-center p-4">
+        <img class="h-12 sm:h-16 rounded-full mr-4" src="/Images/asset 22.jpeg" alt="">
+        <div>
+          <h2 class="text-base sm:text-lg font-semibold">Tom Crook</h2>
+          <p class="text-gray-400 text-sm sm:text-base">Engineering Director</p>
         </div>
-        <div class="absolute inset-0 bg-gray-300 rounded-lg [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 flex flex-col justify-center items-center">
-          <p class="font-poppins text-center text-[0.9rem] text-gray-600">Woit’s boutique format allows us to maintain a highly customized approach, build a long-term partnership, and remain focused on specific tasks at hand.</p>
-        </div>
+      </div>
+      <div class="para px-6 sm:px-10 pb-6 text-sm sm:text-base">
+        Woit Solutions once again demonstrated their technical excellence and deep industry insight by delivering a highly scalable and intelligent solution tailored to Transact.
       </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="group h-full min-h-[15rem] [perspective:1000px]">
-      <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        <div class="absolute inset-0 bg-gray-200 rounded-lg [backface-visibility:hidden] p-6 flex flex-col justify-center items-center">
-          <img class="w-16" src="/Images/asset 14.svg" alt="">
-          <h2 class="font-poppins mt-4 font-medium text-center">Domain Expertise</h2>
+    <div class="card1 h-auto w-[90vw] sm:w-[35rem] flex-shrink-0 rounded-lg border border-gray-500">
+      <div class="img">
+        <img class="w-full h-48 sm:h-64 object-cover rounded-t-lg" src="/Images/asset 72.png" alt="">
+      </div>
+      <div class="text flex items-center p-4">
+        <img class="h-12 sm:h-16 rounded-full mr-4" src="/Images/asset 17.jpeg" alt="">
+        <div>
+          <h2 class="text-base sm:text-lg font-semibold">Chloe Brown</h2>
+          <p class="text-gray-400 text-sm sm:text-base">Project Manager</p>
         </div>
-        <div class="absolute inset-0 bg-gray-300 rounded-lg [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 flex flex-col justify-center items-center">
-          <p class="font-poppins text-center text-[0.9rem] text-gray-600">We possess exceptional domain expertise and in-depth knowledge of niche technologies: from solution architecture to firefighting projects.</p>
-        </div>
+      </div>
+      <div class="para px-6 sm:px-10 pb-6 text-sm sm:text-base">
+        Woit Solutions delivered a powerful system, streamlining the loan process with automation and a seamless user experience—exceeding all expectations.
       </div>
     </div>
 
     <!-- Card 4 -->
-    <div class="group h-full min-h-[15rem] [perspective:1000px]">
-      <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        <div class="absolute inset-0 bg-gray-200 rounded-lg [backface-visibility:hidden] p-6 flex flex-col justify-center items-center">
-          <img class="w-16" src="/Images/asset 15.svg" alt="">
-          <h2 class="font-poppins mt-4 font-medium text-center">Time-To-Market</h2>
+    <div class="card1 h-auto w-[90vw] sm:w-[35rem] flex-shrink-0 rounded-lg border border-gray-500">
+      <div class="img">
+        <img class="w-full h-48 sm:h-64 object-cover rounded-t-lg" src="/Images/asset 73.png" alt="">
+      </div>
+      <div class="text flex items-center p-4">
+        <img class="h-12 sm:h-16 rounded-full mr-4" src="/Images/asset 18.jpeg" alt="">
+        <div>
+          <h2 class="text-base sm:text-lg font-semibold">John Dennings</h2>
+          <p class="text-gray-400 text-sm sm:text-base">Solution Architect</p>
         </div>
-        <div class="absolute inset-0 bg-gray-300 rounded-lg [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 flex flex-col justify-center items-center">
-          <p class="font-poppins text-center text-[0.9rem] text-gray-600">High level expertise and a number of solutions accelerators enable fast product rollout, quick customizations, and smooth delivery. As a result, you get reduced development costs with speedier market entry.</p>
-        </div>
+      </div>
+      <div class="para px-6 sm:px-10 pb-6 text-sm sm:text-base">
+        Woit Solutions transformed Transact’s loan processing with their smart, automated system—boosting speed, accuracy, and satisfaction beyond expectations.
       </div>
     </div>
 
     <!-- Card 5 -->
-    <div class="group h-full min-h-[15rem] [perspective:1000px]">
-      <div class="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-        <div class="absolute inset-0 bg-gray-200 rounded-lg [backface-visibility:hidden] p-6 flex flex-col justify-center items-center">
-          <img class="w-16" src="/Images/asset 16.svg" alt="">
-          <h2 class="font-poppins mt-4 font-medium text-center">A-Class Team</h2>
-        </div>
-        <div class="absolute inset-0 bg-gray-300 rounded-lg [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 flex flex-col justify-center items-center">
-          <p class="font-poppins text-center text-[0.9rem] text-gray-600">With over 13 years of experience, we leverage our deep technology knowledge and unparalleled software engineering expertise to ensure digital transformation maturity across the enterprise.</p>
+    <div class="card1 h-auto w-[90vw] sm:w-[35rem] flex-shrink-0 rounded-lg border border-gray-500">
+      <div class="img">
+        <img class="w-full h-48 sm:h-64 object-cover rounded-t-lg" src="/Images/asset 74.png" alt="">
+      </div>
+      <div class="text flex items-center p-4">
+        <img class="h-12 sm:h-16 rounded-full mr-4" src="/Images/asset 19.jpeg" alt="">
+        <div>
+          <h2 class="text-base sm:text-lg font-semibold">Andre David</h2>
+          <p class="text-gray-400 text-sm sm:text-base">Senior Business Analyst</p>
         </div>
       </div>
+      <div class="para px-6 sm:px-10 pb-6 text-sm sm:text-base">
+        Woit Solutions empowered Transact with a loan automation system that simplified operations, minimized errors, and performed exceptionally.
+      </div>
     </div>
+
+    <!-- Card 6 -->
+    <div class="card1 h-auto w-[90vw] sm:w-[35rem] flex-shrink-0 rounded-lg border border-gray-500">
+      <div class="img">
+        <img class="w-full h-48 sm:h-64 object-cover rounded-t-lg" src="/Images/asset 75.png" alt="">
+      </div>
+      <div class="text flex items-center p-4">
+        <img class="h-12 sm:h-16 rounded-full mr-4" src="/Images/asset 20.jpeg" alt="">
+        <div>
+          <h2 class="text-base sm:text-lg font-semibold">Andre David</h2>
+          <p class="text-gray-400 text-sm sm:text-base">Senior Business Analyst</p>
+        </div>
+      </div>
+      <div class="para px-6 sm:px-10 pb-6 text-sm sm:text-base">
+        Woit Solutions empowered Transact with a loan automation system that simplified operations, minimized errors, and performed exceptionally.
+      </div>
+    </div>
+
   </div>
 </div>
-
-
-
-
-
-
 
 
 
