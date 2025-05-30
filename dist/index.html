@@ -487,7 +487,7 @@
 
  <!-- Card slider -->
   <div class="wrapper flex justify-center items-center lg:mt-[5rem] mt-0">
-    <div class="Card_slider h-[50rem] lg:h-[45rem] w-full max-w-[72rem] mt-[3rem] md:mt-0  overflow-hidden relative rounded-lg px-4 sm:px-6 lg:px-0">
+    <div class="Card_slider h-[43rem] lg:h-[45rem] w-full max-w-[72rem] mt-[3rem] md:mt-0  overflow-hidden relative rounded-lg px-4 sm:px-6 lg:px-0">
   <div class="text flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 sm:p-6 gap-4">
     <div>
       <h2 class="text-[#91CE85] text-lg sm:text-xl font-poppins font-semibold ">TESTIMONIALS</h2>
@@ -610,67 +610,83 @@
 
 
 
-
-
 <!-- Form Section -->
-<!-- 
-<div class="form_Section h-[70rem] w-[100%] flex justify-center gap-20 items-center bg-white">
-  <div class="text_section h-[60rem] w-[40rem]">
-    <h2 class="text-[1.7rem] font-poppins font-semibold">Let's Talk Furthur</h2>
-    <p class="text-gray-500 text-[1.1rem] font-poppins mt-3">Please fill out the following form and we will get back to you shortly</p>
+<div class="form_Section w-full flex flex-col-reverse lg:flex-row justify-center items-center gap-16 lg:gap-20 px-4 sm:px-8 py-20 bg-white">
+  
+  <!-- Text + Form Section -->
+  <div class="text_section w-full max-w-2xl">
+    <h2 class="text-3xl lg:text-4xl font-semibold font-poppins text-gray-800">Let's Talk Further</h2>
+    <p class="text-gray-500 text-base mt-3">Please fill out the form below and we’ll get back to you shortly.</p>
 
-    <form action="action.php" method="post" enctype="multipart/form-data">
-  <div class="name flex justify-center gap-5 items-center  p-10">
-    <div class="first_name">
-      <h3 class="text-[1.2rem] font-poppins">First Name</h3>
-      <input class="p-3 mt-4 border border-gray-200 rounded-md w-[19rem]" type="text" name="first_name" placeholder="First Name" required>
-    </div>
-    <div class="last_name">
-      <h3 class="text-[1.2rem] font-poppins">Last Name</h3>
-      <input class="p-3 mt-4 border border-gray-200 rounded-md w-[19rem]" type="text" name="last_name" placeholder="Last Name" required>
-    </div>
-  </div>
+    <form action="action.php" method="post" enctype="multipart/form-data" class="mt-8 space-y-6">
+      
+      <!-- Name Inputs -->
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="w-full">
+          <label class="block text-sm font-poppins mb-2 text-gray-700">First Name</label>
+          <input type="text" name="first_name" placeholder="First Name" required
+                 class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#53C7D8] transition" />
+        </div>
+        <div class="w-full">
+          <label class="block text-sm font-poppins mb-2 text-gray-700">Last Name</label>
+          <input type="text" name="last_name" placeholder="Last Name" required
+                 class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#53C7D8] transition" />
+        </div>
+      </div>
 
-  <div class="email p-4">
-    <h2 class="text-[1.2rem] font-poppins">Email</h2>
-    <input class="w-full p-2 mt-4 border border-gray-200 rounded-md py-4" type="email" name="email" placeholder="email@gmail.com" required>
-  </div>
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-poppins mb-2 text-gray-700">Email</label>
+        <input type="email" name="email" placeholder="email@gmail.com" required
+               class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#53C7D8] transition" />
+      </div>
 
-  <div class="message p-4">
-    <h2 class="text-[1.2rem] font-poppins">Message</h2>
-    <textarea class="h-[16rem] mt-4 border border-gray-200 w-full p-2 rounded-md" name="message" placeholder="Type your message..." required></textarea>
-  </div>
+      <!-- Message -->
+      <div>
+        <label class="block text-sm font-poppins mb-2 text-gray-700">Message</label>
+        <textarea name="message" placeholder="Type your message..." required
+                  class="w-full h-40 p-3 border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#53C7D8] transition"></textarea>
+      </div>
 
-  <div class="file p-4">
-    <h3 class="text-[1.2rem] font-poppins">File</h3>
-    <input type="file" class="p-3  pl-2 rounded-md  border border-gray-200 w-[100%]" name="No file Chosen" required>
-  </div>
-
-  <div class="btn p-4">
-    <button class="bg-[#53C7D8] text-white p px-6 py-2 rounded-md duration-300 hover:bg-[#44a8b8] hover:shadow-lg hover:duration-300">Send</button>
-  </div>
-</form>
-
-
-  </div>
-  <div class="photo_Section h-[50rem] flex flex-col justify-center gap-12 border border-gray-600 items-center w-[35rem] ">
-    <h3 class="text-[1.6rem] font-poppins text-gray-500">
-      Trusted by
-    </h3>
-    <div class="images flex flex-col justify-center gap-12 items-center ">
-      <img class="h-20" src="/Images/asset 23.png" alt="">
-      <img class="h-[4.1rem]" src="/Images/asset 24.png" alt="">
-      <img class="h-[3.6rem]" src="/Images/asset 25.png" alt="">
-      <img src="/Images/asset 26.png" alt="">
-      <img src="/Images/asset 27.png" alt="">
-    </div>
-  </div>
+      <!-- File Upload -->
+<div>
+  <label class="block text-sm font-medium text-gray-700 mb-2 font-poppins">Attach File</label>
+  <input
+    type="file"
+    name="attachment"
+    required
+    class="block w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4
+           file:rounded-md file:border-0
+           file:text-sm file:font-semibold
+           file:bg-[#53C7D8] file:text-white
+           hover:file:bg-[#44a8b8]
+           transition cursor-pointer border border-gray-300 rounded-md"
+  />
 </div>
- -->
 
+      <!-- Submit Button -->
+      <div>
+        <button type="submit"
+                class="bg-[#53C7D8] text-white px-8 py-3 rounded-md font-medium hover:bg-[#44a8b8] shadow-md transition duration-300">
+          Send
+        </button>
+      </div>
+    </form>
+  </div>
 
+  <!-- Photo/Trust Section -->
+  <div class="photo_Section w-full max-w-md flex flex-col items-center text-center gap-8 py-10 border border-gray-200 rounded-lg">
+    <h3 class="text-xl font-poppins text-gray-600">Trusted by</h3>
+    <div class="images flex flex-wrap md:flex-col justify-center gap-6 items-center">
+      <img class="h-20" src="/Images/asset 23.png" alt="Client 1" />
+      <img class="h-16" src="/Images/asset 24.png" alt="Client 2" />
+      <img class="h-14" src="/Images/asset 25.png" alt="Client 3" />
+      <img class="h-12" src="/Images/asset 26.png" alt="Client 4" />
+      <img class="h-12" src="/Images/asset 27.png" alt="Client 5" />
+    </div>
+  </div>
 
-
+</div>
 
 
 
