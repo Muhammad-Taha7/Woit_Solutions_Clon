@@ -42,6 +42,7 @@ Copy
 Edit
 
 ---
+📸 Screenshots
 ![image](https://github.com/user-attachments/assets/986a19be-488c-4269-b14a-eacb08fab6d3)
 
 ![image](https://github.com/user-attachments/assets/efdd246c-35ab-44fe-83a7-09ab71de4fa8)
@@ -50,6 +51,13 @@ Edit
 
 
 ![image](https://github.com/user-attachments/assets/81282c81-c72b-4afa-8111-8e1bc9efeb5b)
+
+📸 Screenshots
+
+![image](https://github.com/user-attachments/assets/381ba644-51a2-4d95-9f85-aa65ef83fbd3)
+
+![image](https://github.com/user-attachments/assets/672bef61-81aa-45ea-a0ac-bb61f6a3f92b)
+
 ## 🛠️ How to Run This Project
 
 ### 1. Clone Repository
@@ -88,7 +96,4 @@ Easy to customize and scale
 
 
 
-![image](https://github.com/user-attachments/assets/381ba644-51a2-4d95-9f85-aa65ef83fbd3)
-
-![image](https://github.com/user-attachments/assets/672bef61-81aa-45ea-a0ac-bb61f6a3f92b)
 
