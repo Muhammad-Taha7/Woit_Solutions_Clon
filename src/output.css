@@ -2058,12 +2058,24 @@ video {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
 
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:items-center {
     align-items: center;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
   }
 
   .sm\:gap-6 {
@@ -2091,6 +2103,10 @@ video {
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
   }
 
   .sm\:text-2xl {
@@ -2194,6 +2210,34 @@ video {
 
   .md\:w-\[35rem\] {
     width: 35rem;
+  }
+
+  .md\:w-\[80rem\] {
+    width: 80rem;
+  }
+
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[60rem\] {
+    width: 60rem;
+  }
+
+  .md\:w-\[40rem\] {
+    width: 40rem;
+  }
+
+  .md\:w-\[45rem\] {
+    width: 45rem;
+  }
+
+  .md\:w-\[48rem\] {
+    width: 48rem;
+  }
+
+  .md\:w-\[50rem\] {
+    width: 50rem;
   }
 
   .md\:grid-cols-2 {
@@ -2514,6 +2558,11 @@ video {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pt-2 {
