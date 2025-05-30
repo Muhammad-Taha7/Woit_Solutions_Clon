@@ -44,7 +44,12 @@ Edit
 ---
 ![image](https://github.com/user-attachments/assets/986a19be-488c-4269-b14a-eacb08fab6d3)
 
+![image](https://github.com/user-attachments/assets/efdd246c-35ab-44fe-83a7-09ab71de4fa8)
 
+![image](https://github.com/user-attachments/assets/419760cb-3939-459a-92cf-5db76944ebb6)
+
+
+![image](https://github.com/user-attachments/assets/81282c81-c72b-4afa-8111-8e1bc9efeb5b)
 ## 🛠️ How to Run This Project
 
 ### 1. Clone Repository
@@ -61,7 +66,7 @@ npm install
 bash
 Copy
 Edit
-![image](https://github.com/user-attachments/assets/efdd246c-35ab-44fe-83a7-09ab71de4fa8)
+
 
 npx tailwindcss -i ./src/css/input.css -o ./dist/style.css --watch
 Now open dist/index.html in your browser or use Live Server in VS Code.
@@ -70,7 +75,7 @@ Now open dist/index.html in your browser or use Live Server in VS Code.
 Fully responsive layout
 
 Modern design with Tailwind
-![image](https://github.com/user-attachments/assets/419760cb-3939-459a-92cf-5db76944ebb6)
+
 
 
 Interactive navigation and transitions
@@ -78,7 +83,7 @@ Interactive navigation and transitions
 Organized code and assets
 
 Easy to customize and scale
-![image](https://github.com/user-attachments/assets/81282c81-c72b-4afa-8111-8e1bc9efeb5b)
+
 
 
 
