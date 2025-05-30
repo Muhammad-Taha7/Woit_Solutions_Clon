@@ -721,6 +721,42 @@ video {
   margin-top: 10rem;
 }
 
+.mt-\[10\] {
+  margin-top: 10;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-\[1rem\] {
+  margin-top: 1rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-\[1\.7rem\] {
+  margin-top: 1.7rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -833,6 +869,34 @@ video {
   height: 43rem;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.h-\[rem\] {
+  height: rem;
+}
+
+.h-\[7rem\] {
+  height: 7rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[6rem\] {
+  height: 6rem;
+}
+
+.h-\[12rem\] {
+  height: 12rem;
+}
+
 .min-h-\[15rem\] {
   min-height: 15rem;
 }
@@ -906,6 +970,18 @@ video {
   width: 88vw;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[rem\] {
+  width: rem;
+}
+
+.w-\[100\%rem\] {
+  width: 100%rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -932,6 +1008,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .flex-shrink-0 {
@@ -1046,6 +1126,14 @@ video {
   gap: 4rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1110,6 +1198,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
@@ -1133,6 +1225,16 @@ video {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+}
+
+.border-b-gray-500 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(107 114 128 / var(--tw-border-opacity, 1));
+}
+
+.border-b-gray-300 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#53C7D8\] {
@@ -1168,6 +1270,21 @@ video {
 .bg-pink-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 207 232 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\/Images\/woit\%20solut\.png\'\)\] {
@@ -1294,6 +1411,16 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1338,12 +1465,20 @@ video {
   padding-top: 5rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-poppins {
   font-family: Poppins, sans-serif;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -1426,6 +1561,22 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[1\.8rem\] {
+  font-size: 1.8rem;
+}
+
+.text-\[1\.4rem\] {
+  font-size: 1.4rem;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-\[1\.9rem\] {
+  font-size: 1.9rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1436,6 +1587,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-\[\#53C7D8\] {
@@ -1511,6 +1666,10 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+
+.text-\[1\.\] {
+  color: 1.;
 }
 
 .opacity-0 {
@@ -1656,6 +1815,11 @@ video {
 .hover\:text-\[\#53C7D8\]:hover {
   --tw-text-opacity: 1;
   color: rgb(83 199 216 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-blue-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
 
 .hover\:shadow-\[0_5px_15px_rgba\(0\2c 128\2c 0\2c 0\.35\)\]:hover {
@@ -1894,6 +2058,10 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
